@@ -550,6 +550,27 @@
                     <span class="skills__percentage skills__vc"></span>
                   </div>
                 </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">PHP</h3>
+                    <span class="skills__number">30%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__php"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Flask</h3>
+                    <span class="skills__number">40%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__fl"></span>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -1968,22 +1989,22 @@
             </div>
           </div>
           <form
-            action=""
             class="contact__form grid"
-            onsubmit="sendEmail(); reset(); return false;"
+            method="post"
+            action="./mail.php"
           >
             <div class="contact__inputs grid">
               <div class="contact__content">
                 <label for="" class="contact__label">Name</label>
-                <input type="text" class="contact__input" id="name" />
+                <input type="text" class="contact__input form-control" name="name" placeholder="Your Name" id="name" required/>
               </div>
               <div class="contact__content">
                 <label for="" class="contact__label">Email</label>
-                <input type="email" class="contact__input" id="email" />
+                <input type="email" class="contact__input form-control" name="email" placeholder="Your Email" id="email" required/>
               </div>
               <div class="contact__content">
                 <label for="" class="contact__label">Project</label>
-                <input type="text" class="contact__input" id="project" />
+                <input type="text" class="contact__input form-control" name="project" placeholder="Topic" id="project" required/>
               </div>
               <div class="contact__content">
                 <label for="" class="contact__label">Message</label>
@@ -1992,8 +2013,9 @@
                   id=""
                   cols="0"
                   rows="7"
-                  class="contact__input"
+                  class="contact__input form-control" name="message" placeholder="Your Message"
                   id="message"
+                  required
                 ></textarea>
               </div>
             </div>
@@ -2068,32 +2090,19 @@
     <a href="#" class="scrollup" id="scroll-up">
       <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
+     <!--==================== Preloader ====================-->
     <script>
       var preloader = document.querySelector(".preloader");
       function LOAD() {
         preloader.style.display = "none";
       }
     </script>
+     <!--==================== Scrolling Animation ====================-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <!--==================== Mail ====================-->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendEmail() {
-        Email.send({
-          SecureToken: "0373f0bc-4192-4a02-bd63-98ef8dc0bb23",
-          // Host: "smtp.gmail.com",
-          // Username: "LOKI",
-          // Password: "123456789",
-          To: "kumarlokesh15012000@gmail.com",
-          From: document.getElementById("email").value,
-          Subject: document.getElementById("project").value,
-          Body: "Name: " + document.getElementById("name").value + "<br> Message" + document.getElementById("message").value,
-        }).then((message) => alert("Message sent successfully :)"));
-      }
-    </script>
+ <!--==================== Lazy Load ====================-->
     <script>
       const script = document.createElement("script");
       script.src =
