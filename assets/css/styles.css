@@ -538,6 +538,14 @@ img {
   width: 80%;
 }
 
+.skills__php {
+  width: 30%;
+}
+
+.skills__fl {
+  width: 40%;
+}
+
 .skills__tru {
   width: 40%;
 }
