@@ -1,20 +1,18 @@
 <?php
-$name = $_POST['name'];
-$visitor_email = $_POST'email'];
-$project = $_POST['project'];
-$message = $_POST['message'];
-$email_from = 'loki15012000@gmail.com';
-$email_subject = "New Form Submission in your website";
-$email_body = "User Name: $name.\n".
-"User Email: $visitor_email.\n".
-"User Project: $project.\n".
-"User Message: $message.\n";
-$to = "kumarlokesh15012000@gmail.com";
-$headers = "From: $email_from \r\n";
-$headers .= "Reply-To: $visitor_email \r\n";
 
-mail($to,$email_subject, $email_body , $headers) ;
+$name = htmlspecialchars($_POST['name']);
+$email = htmlspecialchars($_POST['email']);
+$project = htmlspecialchars($_POST['project']);
+$message = htmlspecialchars($_POST['message']);
 
-header("Location: index.html") ;
 
+$receiver = "kumarlokesh15012000@gmail.com"; //enter that email address where you want to receive all messages
+$subject = "From: $name <$email>";
+$body = "Name: $name\nEmail: $email\nProject: $project\n\nMessage:\n$message\n\nRegards,\n$name";
+$sender = "From: $email";
+if(mail($receiver, $subject, $body, $sender)){
+    echo "Your message has been sent";
+}else{
+    echo "Sorry, failed to send your message!";
+}
 ?>

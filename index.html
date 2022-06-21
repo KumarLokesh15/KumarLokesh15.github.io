@@ -385,6 +385,16 @@
 
                 <div class="skills__data">
                   <div class="skills__titles">
+                    <h3 class="skills__name">Flask</h3>
+                    <span class="skills__number">40%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__fl"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
                     <h3 class="skills__name">Jupyter Notebook</h3>
                     <span class="skills__number">90%</span>
                   </div>
@@ -563,11 +573,11 @@
 
                 <div class="skills__data">
                   <div class="skills__titles">
-                    <h3 class="skills__name">Flask</h3>
-                    <span class="skills__number">40%</span>
+                    <h3 class="skills__name">Firebase</h3>
+                    <span class="skills__number">60%</span>
                   </div>
                   <div class="skills__bar">
-                    <span class="skills__percentage skills__fl"></span>
+                    <span class="skills__percentage skills__fir"></span>
                   </div>
                 </div>
 
@@ -1990,21 +2000,20 @@
           </div>
           <form
             class="contact__form grid"
-            method="post"
-            action="./mail.php"
+            action="#"
           >
             <div class="contact__inputs grid">
               <div class="contact__content">
                 <label for="" class="contact__label">Name</label>
-                <input type="text" class="contact__input form-control" name="name" placeholder="Your Name" id="name" required/>
+                <input type="text" class="contact__input" name="name" placeholder="Your Name" id="name" required/>
               </div>
               <div class="contact__content">
                 <label for="" class="contact__label">Email</label>
-                <input type="email" class="contact__input form-control" name="email" placeholder="Your Email" id="email" required/>
+                <input type="email" class="contact__input" name="email" placeholder="Your Email" id="email" required/>
               </div>
               <div class="contact__content">
                 <label for="" class="contact__label">Project</label>
-                <input type="text" class="contact__input form-control" name="project" placeholder="Topic" id="project" required/>
+                <input type="text" class="contact__input" name="project" placeholder="Topic" id="project" required/>
               </div>
               <div class="contact__content">
                 <label for="" class="contact__label">Message</label>
@@ -2013,17 +2022,18 @@
                   id=""
                   cols="0"
                   rows="7"
-                  class="contact__input form-control" name="message" placeholder="Your Message"
+                  class="contact__input" name="message" placeholder="Your Message"
                   id="message"
                   required
                 ></textarea>
               </div>
             </div>
-            <div>
+            <div class="button-area">
               <button type="submit" class="button button--flex">
                 Send Message
                 <i class="uil uil-message button__icon"></i>
               </button>
+              <span></span>
             </div>
           </form>
         </div>
@@ -2115,5 +2125,6 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/mail.js"></script>
   </body>
 </html>

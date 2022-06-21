@@ -610,6 +610,10 @@ img {
   width: 50%;
 }
 
+.skills__fir {
+  width: 60%;
+}
+
 .skills__sql {
   width: 90%;
 }
@@ -1100,6 +1104,13 @@ form button {
   outline: none;
 }
 
+.button-area span {
+  margin: 20px 0 0;
+  text-align: left;
+  display: none;
+  font-size: 12px;
+}
+
 /*==================== FOOTER ====================*/
 .footer {
   padding-top: 2rem;
@@ -1437,6 +1448,10 @@ form button {
 
   .qualification__icon {
     font-size: 1.8rem;
+  }
+  .button-area span {
+    text-align: left;
+    font-size: 18px;
   }
 }
 /* For large devices */
