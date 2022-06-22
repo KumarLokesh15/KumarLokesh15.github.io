@@ -104,7 +104,7 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
     clickable: true,
   },
   autoplay: {
-    delay: 5000,
+    delay: 6000,
     disableOnInteraction: false,
   },
 });
