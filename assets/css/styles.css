@@ -978,6 +978,10 @@ img {
 .swiper-pagination-bullet {
   outline: none;
 }
+
+.photos span {
+  color: var(--title-color);
+}
 /*==================== PROJECT IN MIND ====================*/
 .project {
   text-align: center;
@@ -987,10 +991,6 @@ img {
   background-color: var(--first-color-second);
   padding-top: 3rem;
 }
-
-/* .project__img {
-  transform: scale(2);
-} */
 
 .project__title {
   font-size: var(--h2-font-size);
@@ -1452,6 +1452,9 @@ form button {
   .button-area span {
     text-align: left;
     font-size: 18px;
+  }
+  .photos span {
+    color: var(--title-color);
   }
 }
 /* For large devices */
