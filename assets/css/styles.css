@@ -894,7 +894,7 @@ img {
 }
 
 .portfolio__text {
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--title-color);
   margin-bottom: 15px;
 }
 
@@ -979,9 +979,6 @@ img {
   outline: none;
 }
 
-.photos span {
-  color: var(--title-color);
-}
 /*==================== PROJECT IN MIND ====================*/
 .project {
   text-align: center;
