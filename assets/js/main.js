@@ -125,7 +125,7 @@ let swiperPhoto = new Swiper(".photos__container", {
   },
   autoplay: {
     delay: 5000,
-    disableOnInteraction: false,
+    disableOnInteraction: true,
   },
 });
 
@@ -139,13 +139,20 @@ if (mediaQuery.matches) {
     spaceBetween: 30,
     slidesPerGroup: 3,
     loop: true,
-    loopFillGroupWithBlank: false,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
     keyboard: {
       enabled: true,
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
   });
 }
