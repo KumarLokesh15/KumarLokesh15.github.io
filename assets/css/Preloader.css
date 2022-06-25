@@ -17,7 +17,7 @@
   font-size: 12px;
   left: 51%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color: #000;
 }
 
 .preloader h1:nth-of-type(1) {
