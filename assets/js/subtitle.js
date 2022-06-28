@@ -75,7 +75,7 @@ const phrases = [
   "Inquisitive",
   "Philomoth",
   "Altrustic",
-  "Sporty",
+  "Athletic",
   "Melmaniac",
   "Adventurer",
   "Minimalist",
