@@ -24,6 +24,9 @@
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
     <title>Lokesh Kumar</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
   </head>
   <body onload="LOAD()">
     <div class="preloader">
@@ -215,23 +218,23 @@
               Wantrapreneur, Melmaniac, Inquisitive, Adventurer, Minimalist.
               Interests in art, philosophy, podcasts, sports & games
             </p>
-            <div class="about__info">
+            <div class="about__info counter-up">
               <div>
-                <span class="about__info-title">01+</span>
+                <span class="about__info-title counter">1</span>
                 <span class="about__info-name"
                   >Years <br />
                   experience</span
                 >
               </div>
               <div>
-                <span class="about__info-title">13+</span>
+                <span class="about__info-title counter">14</span>
                 <span class="about__info-name"
                   >Completed <br />
                   project</span
                 >
               </div>
               <div>
-                <span class="about__info-title">03+</span>
+                <span class="about__info-title counter">5</span>
                 <span class="about__info-name"
                   >Companies <br />
                   worked</span
@@ -2134,6 +2137,15 @@
     <a href="#" class="scrollup" id="scroll-up">
       <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
+    <!-- =================== Counter-Up==================== -->
+    <script>
+      $(document).ready(function () {
+        $(".counter").counterUp({
+          delay: 10,
+          time: 800,
+        });
+      });
+    </script>
     <!--==================== Preloader ====================-->
     <script>
       var preloader = document.querySelector(".preloader");
